@@ -39,75 +39,28 @@
         }
         .silly{
             font-weight:light;
-            font-size:0.6rem;
+            font-size:0.7rem;
         }
         .box{
             position: absolute;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-        }
-        .box1{
-            position: relative;
-            left: 0;
             top:0;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            display: grid;
+            height: 150vh;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         }
-        .box2{
-            position: relative;
-            left: 0;
-            top:10%;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;   
-        }
-        .box3{
-            position: relative;
-            left: 0;
-            top:20%;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-        }
-            .box4{
-            position: relative;
-            left: 0;
-            top:30%;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-        }
-            .box5{
-            position: relative;
-            left: 0;
-            top:40%;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-        }
-            .box6{
-            position: relative;
-            left: 0;
-            top: 50%;
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-        }
-        .background{
+            .background{
             user-select: none;
             pointer-events: none;
-        }
-            .background img{
-            width: 10%;
-            height: 10%;
             z-index: -1;
-            pointer-events: none;
         }
-        .event-schedule{
+            .box img{
+            pointer-events: none;
+            height: 60%;
+            width: 40%;
+        }
+                .event-schedule{
             list-style: none;
             background-color: rgba(137, 43, 226, 0.9);
             padding: 5px;
@@ -179,56 +132,117 @@
         </ul>
     </div>
     <div class="background box">
-        <div class="background box1">
+        <div>
             <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
             <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+        <div>
             <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
             <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
             <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>        
             <img unselectable="on" class="background flower" src="./assets/images/flower.png">
         </div>
-        <div class="background box2">
-          <img unselectable="on" class="background flower" src="./assets/images/flower.png">
-            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
-            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
-            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
-            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
-        </div>
-        <div class="background box3">
-            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
-            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
-            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
-            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
-        </div>
-        <div class="background box4">
-            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
-            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
-            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
-            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
-        </div>
-        <div class="background box5">
-            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
-            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
-            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
-            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
-            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
-        </div>
-        <div class="background box6">
-            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
-            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
-            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
-            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
-            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        <div>
             <img unselectable="on" class="background flower" src="./assets/images/flower.png">
         </div>
-    </div>
-       <footer>
+        <div>
+            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
+        </div>
+        <div>            
+            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background butterfly" src="./assets/images/butterfly.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background Rose" src="./assets/images/Rose.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background dragon" src="./assets/images/dragon.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower2.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background unicorn" src="./assets/images/unicorn.png">
+        </div>
+        <div>
+            <img unselectable="on" class="background flower" src="./assets/images/flower.png">
+        </div>
+    </div>   
+    <footer>
         wishlists 
         <a href="https://www.amazon.com/hz/wishlist/ls/2IE43SJ6KEH0?ref_=wl_share">Amazon</a>
         <a href="https://www.humblebundle.com/store/wishlist/4514859745345536">Humble Bundle</a>
